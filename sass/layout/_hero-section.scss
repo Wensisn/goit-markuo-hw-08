@@ -1,4 +1,18 @@
+
+.container-hero{
+  max-width: 696px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width:320px) and (max-width:1199px){
+    max-width: 420px;
+  }
+}
+
 .hero-section{
+
+
     max-width: 1600px;
     height: 600px;
     margin: auto;
@@ -111,16 +125,14 @@
     color: var(--title-color);
     margin-bottom: 30px;
 
+  
     @media (min-width:1199px){
-      font-weight: 900;
-font-size: 44px;
-line-height: 60px;
-/* or 136% */
-
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+      font-size: 44px;
+      line-height: 1.36;
+      justify-content: center;
       }
 
+
 }
+
 
