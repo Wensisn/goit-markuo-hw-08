@@ -41,7 +41,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 480px) and (max-width: 320px) {
+@media (min-width: 480px) {
   .container {
     margin: 0 auto;
     max-width: 480px;
@@ -590,15 +590,6 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.footer-iner {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: 70px;
 }
 
 /* SOCIAL-FOOTER */

@@ -30,7 +30,6 @@
 
 .footer-iner{
 
-    
     justify-content: space-between;
     flex-wrap: wrap;
     margin-right: 70px;
@@ -39,6 +38,8 @@
     display: inline-block;
     margin-bottom: 20px;
     text-decoration: none;
+
+    
 }
 
     &__footer{
@@ -48,6 +49,8 @@ line-height: 1.2;
     flex-shrink: 0;
     color: var(--accent-color);
 
+   
+
 }
     &__white-footer{
     font-weight: 700;
@@ -56,6 +59,7 @@ line-height: 1.2;
     line-height: 1.4;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    
 
 }
 }
