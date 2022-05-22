@@ -65,11 +65,14 @@
         }
       }
     &__title{
-    max-width: 696px;
-    font-size: 26px;
-    line-height: 1.4;
-    margin: 0 auto 30px;
-    text-align: center;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 42px;
+      /* or 162% */
+      
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
 
 
 }
@@ -93,15 +96,31 @@
 
 .title {
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    /* or 136% */
-    
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+
+  
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  /* or 162% */
+  
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
     
     color: var(--title-color);
+    margin-bottom: 30px;
+
+    @media (min-width:1199px){
+      font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+/* or 136% */
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+      }
+
 }
 
