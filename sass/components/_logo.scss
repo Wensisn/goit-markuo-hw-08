@@ -1,0 +1,31 @@
+.logo-nav{
+
+    display: flex;
+    align-items: center;
+    
+    &__item{
+    display: inline-block;
+    margin-right: 93px;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+   &__logo{
+    font-family:'Raleway', sans-serif;
+font-size: 26px;
+line-height: 1.2;
+    flex-shrink: 0;
+    color: var(--accent-color);
+}
+
+    &__black{
+
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    Line-height: 1.4;
+    color: var(--text-color);
+
+} 
+}
+

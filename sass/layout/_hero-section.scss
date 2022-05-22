@@ -1,0 +1,107 @@
+.hero-section{
+    max-width: 1600px;
+    height: 600px;
+    margin: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+    url(../../img/hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../img/hero-mob2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../img/hero-table.jpg);
+  }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../img/hero-table2x.jpg);
+      }
+
+      @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../img/hero-pk.jpg);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: linear-gradient(
+              to right,
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url(../../img/hero-pk2x.jpg);
+        }
+      }
+    &__title{
+    max-width: 696px;
+    font-size: 26px;
+    line-height: 1.4;
+    margin: 0 auto 30px;
+    text-align: center;
+
+
+}
+    &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 32px;
+    margin: auto;
+    border-radius: 4px;
+    color: var(--title-color);
+    background-color: var(--accent-color);
+}
+}
+
+.title {
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    /* or 136% */
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: var(--title-color);
+}
+
