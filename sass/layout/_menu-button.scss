@@ -8,11 +8,15 @@
 }
 
 .menu-button{
-    display: inline-block;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     border: none;
+    display: flex;
     background-color: transparent;
+    position: absolute;
+    // right: 30px;
+    // top: 15px;
+    z-index: 30;
     // position: absolute;
     // width: 40px;
     // height: 40px;
@@ -47,20 +51,24 @@ fill: $accent-color;
 }
 }
 
+.menu-button .is-open{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transform: translateX(0%);
+}
+
 .menu-container{
     display: none;
     position: absolute;
     width: 100%;
-    left: 0 ;
-    top: 100%;
-    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
     height: 796px;
-
     padding: 48px 83px 48px 40px;
-    
     background-color: $title-color;
-
-    
+   
     @media (min-width:768px) and (max-width:1200px){
         display: none;
     }
@@ -74,9 +82,9 @@ fill: $accent-color;
         flex-direction: column;
         align-content: flex-start;
         flex-wrap: wrap;
+        height: 150vh;
         
     }
-
 
     &__item:not(:last-child){
         margin-bottom: 37px;
@@ -98,17 +106,9 @@ fill: $accent-color;
         color: $accent-color;
     }
 
-
-    // &__one{
-    //     font-weight: 500;
-    // font-size: 40px;
-    // line-height: 47px;
-    // letter-spacing: 0.02em;
-    // text-decoration: none;
-    //     color: $accent-color;
-    //     text-decoration: none;
-    // }
 }
+
+
 .menu-contact-list{
 
     
