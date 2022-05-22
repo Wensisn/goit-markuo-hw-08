@@ -7,9 +7,30 @@
 .social-section{
     display: flex;
     align-items: baseline;
+
+
+    @media (min-width: 320px) and (max-width:767px) {
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    @media (min-width: 768px) and (max-width:1199px) {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+ 
+
+    
+
 }
 
 .footer-iner{
+
+    
     justify-content: space-between;
     flex-wrap: wrap;
     margin-right: 70px;
@@ -78,6 +99,8 @@ line-height: 1.2;
     display: flex;
     flex-direction: column;
 
+    
+
    
 }
 
@@ -96,7 +119,7 @@ color: var(--title-color);
 
 .social-footer{
     display: flex;   
-    
+     
     &__link{
     width: 44px;
     height: 44px;
@@ -133,6 +156,23 @@ color: var(--title-color);
 /* footer-subscribe*/
 .subscride{
     margin-left: auto;
+
+
+    @media (min-width:320px) and (max-width:767px){
+        display: flex;
+        margin-left: 0;
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (min-width:768px) and (max-width:1199px){
+    display: flex;
+    margin-left: 0;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+}
     
     &__text{
     font-weight: 700;
@@ -143,10 +183,14 @@ color: var(--title-color);
     color: var(--title-color);
     margin-bottom: 20px;
 
+    @media (min-width:768px) and (max-width:1199px){
+        text-align: center;
+    }
+
 }
     &__input{
     padding: 15px 15px;
-    width: 358px;
+    width: 354px;
     height: 50px;
     background-color: var(--fon-color);
     color: var(--title-color);
@@ -170,6 +214,9 @@ color: var(--title-color);
     border: var(--accent-color);
     margin-left: 12px;
 
+    @media (min-width:768px) and (max-width:1199px){
+        margin-top: 20px;
+    }
     
 }
     &__click{

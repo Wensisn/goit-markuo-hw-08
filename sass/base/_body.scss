@@ -63,14 +63,14 @@ img {
         max-width: 480px;
     }
 
-    @media (min-width:768px) and (max-width:480px){
+    @media (min-width:768px){
         margin: 0 auto;
-        max-width: 480px;
+        max-width: 768px;
     }
     
-    @media (min-width:1199px) and (max-width:768px){
+    @media (min-width:1199px) {
         margin: 0 auto;
-        width: 768px;
+        max-width: 1200px;
     }       
     }
 
@@ -90,3 +90,4 @@ img {
      }
 
     
+    //  kllllllllllll
