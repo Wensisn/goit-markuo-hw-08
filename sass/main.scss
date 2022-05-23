@@ -1,5 +1,5 @@
 /* base*/
-@import './base/body';
+@import './base/body' ;
 
 /* components*/
 @import './components/logo';
@@ -10,17 +10,16 @@
 /* layout*/
 @import './layout/command';
 @import './layout/description';
+@import './layout/work';
 @import './layout/footer-stydia';
 @import './layout/header-portfolio';
 @import './layout/header';
 @import './layout/hero-section';
 @import './layout/main-portfolio';
-@import './layout/work';
-@import './layout/menu-button';
+
 
 /* utils*/
 @import './utils/variables';
-
 
 
 

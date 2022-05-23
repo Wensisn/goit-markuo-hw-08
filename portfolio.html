@@ -21,82 +21,29 @@
                     <a class="portfolio-nav__item" href="">
                         <span class="portfolio-nav__logo">Web</span><span class="portfolio-nav__black">Studio</span>
                     </a>
-                </nav>
                     <ul class="portfolio-page">
                         <li class="portfolio-page__item"><a class="portfolio-page__link" href="./index.html">Студия</a> </li>
                         <li class="portfolio-page__item"><a class="portfolio" href="./portfolio.html">Портфолио</a></li>
                         <li class="portfolio-page__item"><a class="portfolio-page__link" href="">Контакты</a></li>
                     </ul>
-                    <ul class="menu-contact">
-                        <li class="menu-contact__item">
-                            <a class="menu-contact__header" href="meilto:info@devstudio.com">
-                            <svg class="menu-contact__email">
-                                <use href="./img/sprite.svg#email"></use>
-                            </svg>
-                            info@devstudio.com</a></li>
-                        <li class="menu-contact__item">
-                            <a class="menu-contact__header" href="+380961111111">
-                            <svg class="menu-contact__phone">
-                                    <use href="./img/sprite.svg#phone"></use>
-                                </svg>
-                            +38 096 111 11 11</a>
-                    </ul>
-
-                    <nav class="menu-button-wrap">
-                        <button type="button" 
-                        class="menu-button" 
-                        aria-expanded="true"
-                        data-menu-button>
-                            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                                <use class="icon-cross" href="./img/sprite.svg#cross"></use>
-                                <use class="icon-close" href="./img/sprite.svg#cross-close"></use>
-                            </svg>
-                        </button>
-
-                        <div class="menu-container" data-menu>
-                            <ul class="menu-container__list">
-                                <li class="menu-container__item"><a class="menu-container__link" href="./index.html">Студия</a></li>
-                                <li class="menu-container__item"><a class="menu-container__link" href="./portfolio.html">Портфолио</a></li>
-                                <li class="menu-container__item"><a class="menu-container__link" href="/">Контакты</a></li>
-                            </ul>
-    
-                            <ul class="menu-contact-list">
-                                <li class="menu-contact-list__mob">
-                                    <a href="+380961111111" class="menu-contact-list__link">
-                                        +38 096 111 11 11
-                                    </a>
-                                </li>
-                                <li class="menu-contact-list__mob">
-                                    <a href="meilto:info@devstudio.com"class="menu-contact-list__mel">
-                                        info@devstudio.com
-                                    </a>
-                                </li>
-                            </ul>
-    
-                            <ul class="social-mob">
-                                <li class="social-mob__item">
-                                    <a href="" class="social-mob__link">Instagram<span class="social-mob__span">|</span></a>
-                                </li>
-                                <li class="social-mob__item">
-                                    <a href="" class="social-mob__link">Twitter<span class="social-mob__span">|</span></a>
-                                </li>
-                                <li class="social-mob__item">
-                                    <a href="" class="social-mob__link">Facebook<span class="social-mob__span">|</span></a>
-                                </li>
-                                <li class="social-mob__item">
-                                    <a href="" class="social-mob__link">LinkedIn</a>
-                                </li>
-                            </ul>
-                        </div>
-    
-    
-                    </nav>
-                
+                </nav> 
+                <ul class="contact-portfolio">
+                    <li class="contact-portfolio__item"><a class="contact-portfolio__contact" href="meilto:info@devstudio.com">
+                        <svg class="menu-contact__email">
+                            <use href="./img/sprite.svg#email"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                    <li class="contact-portfolio__item"><a class="contact-portfolio__contact" href="tel:+380961111111">
+                        <svg class="menu-contact__phone">
+                            <use href="./img/sprite.svg#phone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </ul>
         </div>
       </header>
     <main>
         <section class="section">
-            <div class="container filter">
+            <div class="container">
                 <h1 class="menu-portfolio">Меню</h1>
             <ul class="portfolio-button">
                 <li class="portfolio-button__item"><button class="portfolio-button__link" type="button">Все</button></li>
@@ -279,7 +226,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="social-footer__list">
+                        <li class="social-footer__icon">
                             <a href="" class="social-footer__link">
                                 <svg class="social-footer__icon">
                                     <use  href="./img/sprite.svg#linkedin"></use>
@@ -289,21 +236,19 @@
                     </ul>
                     </div>
                     <form class="subscride">
-                        <p class="subscride__text">Подпишитесь на рассылку</p>
-                        <label for="email"></label>     
-                            <input class="subscride__input" type="email" name="email" id="email" placeholder="E-mail"> 
-                            <div class="subscride__wrap">  
-                        <button type="submit" class="subscride__button">
-                           <span class="subscride__click">Подписаться
-                               <svg class="subscride__icon">
-                                   <use href="./img/sprite.svg#subscribe"></use>
-                               </svg>
-                           </span>
-                        </button>
-                    </div> 
-                </form>
+                            <p class="subscride__text">Подпишитесь на рассылку</p>
+                            <label for="email"></label>     
+                                <input class="subscride__input" type="email" name="email" id="email" placeholder="E-mail">
+                            <button type="submit" class="subscride__button">
+                               <span class="subscride__click">Подписаться
+                                   <svg class="subscride__icon">
+                                       <use href="./img/sprite.svg#subscribe"></use>
+                                   </svg>
+                               </span>
+                            </button>
+                    </form>
         </div>
     </footer>
-<script src="./js/menu.js"></script>
+
 </body>
-</html>
+

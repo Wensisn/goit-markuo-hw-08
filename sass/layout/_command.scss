@@ -11,98 +11,54 @@ color: var(--text-color);
 
 margin-bottom: 50px;
 
-
-
 &__main{
-
 display: flex;
-
-@media screen and (max-width: 767px){
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
 }
+&__item{
+background: var(--title-color);
+/* material shadow v1 */
 
-@media (min-width:768px){
-    flex-wrap: wrap;
-    display: flex;
-    gap: 30px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 
 }
+&__item:not(:last-child){
+margin-right: 30px;
+}
+&__img{
 
-
+display: block;
+max-width: 100%;
+height: auto;
 
 }
-  
-    &__item{
-        background: var(--title-color);
-        /* material shadow v1 */
-        
-        width: 100%;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-        
-
-
-        @media screen and (max-width: 767px){
-            flex: 100%;
-            margin-bottom: 30px;
-        }
-
-        @media (min-width:768px){
-            flex: calc(50% - 60px);
-        }
-        
-        @media (min-width:1199px){
-            width: 270px;
-            flex: calc(25% - 90px);
-        }
-       
-
-        
-        
-        
-    }
-        &__img{
-        
-            width: 100%;
-            object-fit: cover;
-        
-        
-        }
-        &__wrap{  
-        padding: 30px 32px;
-        }
-        
-        &__name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.2;
-        /* identical to box height */
-        text-align: center;
-        
-        
-        margin-bottom: 10px;
-        
-        color: var(--text-color);
-        }
-        
-        &__profession{
-        
-        font-size: 16px;
-        line-height: 1.2;
-        /* identical to box height */
-        text-align: center;
-        
-        color: var(--main-color);
-        margin-bottom: 16px;
-        
-        }   
+&__wrap{  
+padding: 30px 32px;
 }
 
+&__name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+/* identical to box height */
+text-align: center;
 
 
+margin-bottom: 10px;
 
+color: var(--text-color);
+}
 
+&__profession{
 
+font-size: 16px;
+line-height: 1.2;
+/* identical to box height */
+text-align: center;
+
+color: var(--main-color);
+margin-bottom: 16px;
+
+}
+
+}
