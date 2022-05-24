@@ -1,51 +1,91 @@
 .description{
     display: flex;
-    justify-content: center;
- 
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 30px;
+
+@media (min-width:479px){
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media (min-width:768px){
+
+}
+
+    
     &__item{
-    width: calc((100% - 90px) / 4);
+    // width: calc((100% - 90px) / 4);
+    
+    width: 100%;
+
+    @media (min-width:768px){
+    
+        flex: calc((100% - 90px) / 2);
+
     }
 
+    @media(min-width: 1199px){
+        flex: calc(25% - 90px);
+    }
+
+
+}
+
+    
 
     &__svg{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 25px 100px;
-        margin-bottom: 30px;
-        background-color: var(--button-color);
-        border-radius: 4px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--button-color);
+    border-radius: 4px;
+ 
+}
+    &__link{
+
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media (min-width:1199px){
+        text-align: left;
     }
-        &__link{
-        font-size: 14px;
-        font-weight: 700;
-        line-height:1.1;
-        color: var(--text-color);
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        align-items: center;
-         
-    }
-    
-        &__text{
-        line-height: 1.7;
-        /* or 171% */
-        align-items: center;
-    
-        color: var(--main-color);
-    
-    }
-    
-        &__item {
-        list-style-type: none;
-    }
-    
-    
-        &__text {
-        line-height: 1.7;
-        /* or 171% */
-        color: var(--main-color);
-    
-    }
+
+   
+}
+
+    &__text{
+    line-height: 1.7;
+    /* or 171% */
+    align-items: center;
+
+    color: var(--main-color);
+
+
+}
+
+    &__item {
+    list-style-type: none;
+}
+
+
+    &__text {
+    line-height: 1.7;
+    /* or 171% */
+    color: var(--main-color);
+
+}
+
+
 }

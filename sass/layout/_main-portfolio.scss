@@ -1,3 +1,4 @@
+
 .menu-portfolio{
     font-weight: 700;
     font-size: 36px;
@@ -19,16 +20,34 @@
     
 }
 
-.portfolio-button{
+.filter{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio-button{
+
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 50px;
-    list-style-type: none;
+
+    @media (min-width:320px) and (max-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
     
     &__item{
 background: var(--button-color);
 border-radius: 4px;
 
+
+@media (min-width:320px) and (max-width:768px){
+    margin-bottom: 10px;
+}
 
 }
 
@@ -51,6 +70,7 @@ padding: 6px 22px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
+
 }
     &__link:hover,
     &__link:focus{
@@ -61,18 +81,41 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .picture-portfolio{
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media (min-width: 768px) and (max-width:1199px){
+        
     flex-wrap: wrap; 
+
+    }
+
     
     &__item{
 
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 370px;
-   
-}
+
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+
+
+    @media (min-width: 768px) and (max-width:1200px){
+        flex-basis: calc((100% - 4 * 15px) / 2);
+        
+    }
+
+    @media (min-width: 1199px){
+        flex-basis: calc((100% - 4 * 30px) / 3);
+    
+    }
+}   
+
+
 
     &__href:hover &__link{
     display: block;
+    
     
 }
     &__style{
@@ -115,6 +158,11 @@ height: 294px;
     &__href{
     display: block;
     transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media(max-width:1200px){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
   }
       &__href:hover,
       &__href:focus {
@@ -123,13 +171,6 @@ height: 294px;
     outline: none;
   }
 
-    &__item:nth-child(3n){
-    margin-right: 0;
-}
-    &__item:nth-last-child(-n + 3){
-    margin-bottom: 0;
-}
-
     &__wrap{
   
     padding: 20px 25px 20px 25px;
@@ -137,7 +178,9 @@ height: 294px;
 border: 1px solid var(--border-picture);
 box-sizing: border-box;
 
-    
+    @media(max-width:1200px){
+        flex-grow: 1;
+    }
 }
     &__title{
 

@@ -1,7 +1,11 @@
 .work{
     padding-top: 0;
     padding-bottom: 90px;
-    .work__case{
+    @media (max-width: 1200px){    
+        display: none; 
+        }
+    
+    &__case{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -12,6 +16,7 @@
 
     
     color: var(--text-color);
+
     
 }
 

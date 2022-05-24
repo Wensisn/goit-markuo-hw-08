@@ -1,21 +1,22 @@
-:root {
-    --main-font:"Raleway", sans-serif;
-    --title-font: "Roboto", sans-serif;
-    --text-color: #212121 ;
-    --title-color: #FFFFFF;
-    --main-color: #757575;
-    --accent-color: #2196F3;
-    --work-fon:#2F303ACC;
-    --button-color: #F5F4FA;
-    --rgba-color:rgba(255, 255, 255, 0.6);
-    --icon-color: #AFB1B8;
-    --fon-color:#2F303A;
-    --border-header:#ECECEC;
-    --picture-fon:#2196F3E5;
-    --border-picture: #EEEEEE;
-    --modal-color:#0000001A;
-    --button-modal:#188CE8;
-  }
+
+    $main-font:'Raleway', sans-serif;
+    $title-font: 'Roboto', sans-serif;
+    $text-color: #212121 ;
+    $title-color: #FFFFFF;
+    $main-color: #757575;
+    $accent-color: #2196F3;
+    $work-fon:#2F303ACC;
+    $button-color: #F5F4FA;
+    $rgba-color:rgba(255, 255, 255, 0.6);
+    $icon-color: #AFB1B8;
+    $fon-color:#2F303A;
+    $border-header:#ECECEC;
+    $picture-fon:#2196F3E5;
+    $border-picture: #EEEEEE;
+    $modal-color:#0000001A;
+    $button-modal:#188CE8;
+    $span-menu:#21212133;
+
 
 body {
 font-family: 'Roboto', sans-serif;
@@ -24,11 +25,7 @@ color: var(--text-color)  ;
 background-color: var(--title-color);
 font-size: 14px;
 letter-spacing: 0.03em;
-
-
-    
 }
-
 *,
 *::before,
 *::after {
@@ -45,15 +42,52 @@ h1,h2,h3,h4,h5,h6,p{
     margin:0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
     margin-left: auto;
     margin-right: auto;
 
-}
 
-.section {
+    // @media (min-width:480px){
+    //     margin: 0 auto;
+    //     max-width: 480px;
+    // }
+
+    // @media (min-width:768px){
+    //     margin: 0 auto;
+    //     max-width: 768px;
+    // }
+    
+    @media (min-width:1199px) {
+        margin: 0 auto;
+        max-width: 1200px;
+    }       
+    }
+
+    .header-container{
+        display: flex;
+        align-items: center;
+             
+
+        @media (min-width:320px) and (max-width:768px){
+            justify-content: space-between;
+        }
+    }
+
+
+    .section {
     padding: 94px 0;
-}
+     }
+
+    
+    //  kllllllllllll
