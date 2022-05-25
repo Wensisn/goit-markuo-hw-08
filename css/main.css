@@ -515,9 +515,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .social {
@@ -1123,7 +1123,6 @@ img {
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .header-portfolio .container {
-    width: 768px;
     position: relative;
   }
 }
@@ -1921,7 +1920,7 @@ img {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 150vh;
+  height: 100vh;
 }
 .menu-container__item:not(:last-child) {
   margin-bottom: 37px;
