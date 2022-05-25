@@ -12,7 +12,8 @@
 }
 
 @media (min-width:768px){
-
+   display: flex;
+    
 }
 
     
@@ -24,6 +25,8 @@
     @media (min-width:768px){
     
         flex: calc((100% - 90px) / 2);
+       
+       
 
     }
 
@@ -44,6 +47,10 @@
     margin-bottom: 30px;
     background-color: var(--button-color);
     border-radius: 4px;
+
+    // @media (min-width:768px){
+    //     max-width: 320px;
+    // }
  
 }
     &__link{
@@ -58,9 +65,16 @@
     margin-bottom: 10px;
     text-align: center;
 
+
+    @media (min-width:768px){
+        text-align: left;
+    }
+
     @media (min-width:1199px){
         text-align: left;
     }
+
+
 
    
 }

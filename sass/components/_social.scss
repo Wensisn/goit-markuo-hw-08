@@ -11,9 +11,8 @@ margin-bottom: 20px;
 /* SOCIAL-TITLE */
 color: var(--title-color);
 
-@media(max-width:1200px){
-    display: flex;
-    justify-content: center;
+@media(min-width:1199px){
+    text-align: left;
 }
 }
 
